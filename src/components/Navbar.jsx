@@ -43,21 +43,14 @@ export default function Navbar({ onOpenBooking, onOpenDemo }) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Brand Logo */}
-          <a href="#hero" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full border border-gold-500/50 bg-gradient-to-br from-gold-500/20 via-dark-850 to-dark-950 flex items-center justify-center shadow-gold-sm group-hover:border-gold-400 transition-all">
-              <span className="font-serif font-black text-xl text-gold-400 group-hover:scale-110 transition-transform">
-                B
-              </span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-cinzel text-lg sm:text-xl font-bold tracking-[0.2em] text-white group-hover:text-gold-300 transition-colors">
-                BELEZIA
-              </span>
-              <span className="text-[9px] sm:text-[10px] font-sans font-medium tracking-[0.25em] text-gold-400 uppercase">
-                Salon & Academy • Delhi
-              </span>
-            </div>
+          {/* Brand Wordmark Logo */}
+          <a href="#hero" className="flex flex-col group py-1">
+            <span className="font-cinzel text-xl sm:text-2xl font-black tracking-[0.22em] text-gold-gradient group-hover:brightness-110 transition-all leading-tight">
+              BELEZIA
+            </span>
+            <span className="text-[9px] sm:text-[10px] font-sans font-semibold tracking-[0.28em] text-neutral-200 uppercase -mt-0.5 group-hover:text-gold-300 transition-colors">
+              SALON & ACADEMY
+            </span>
           </a>
 
           {/* Desktop Navigation Links */}

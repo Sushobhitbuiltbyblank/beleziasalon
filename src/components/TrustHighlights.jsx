@@ -75,8 +75,9 @@ export default function TrustHighlights({ onOpenBooking, onOpenDemo }) {
                     <div className="text-xs uppercase tracking-wider text-gold-400 font-bold">Laxmi Nagar, Delhi</div>
                     <div className="text-white font-serif font-bold text-lg">Shop G-56, Near Metro Gate 1</div>
                   </div>
-                  <div className="w-12 h-12 rounded-full bg-gold-500/20 border border-gold-500/50 flex items-center justify-center text-gold-300 font-serif font-black text-xl">
-                    11
+                  <div className="px-3 py-1.5 rounded-full bg-gold-500/20 border border-gold-500/50 flex flex-col items-center justify-center text-center">
+                    <span className="text-gold-300 font-serif font-black text-base leading-none">11+</span>
+                    <span className="text-[9px] uppercase tracking-wider text-gold-400 font-bold">Years</span>
                   </div>
                 </div>
               </div>

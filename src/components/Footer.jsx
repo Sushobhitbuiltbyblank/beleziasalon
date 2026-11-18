@@ -30,18 +30,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
           {/* Brand Column (Col 1-4) */}
           <div className="lg:col-span-4 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full border border-gold-500/50 bg-gradient-to-br from-gold-500/20 via-dark-850 to-dark-950 flex items-center justify-center shadow-gold-sm">
-                <span className="font-serif font-black text-xl text-gold-400">B</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-cinzel text-lg font-bold tracking-[0.2em] text-white">
-                  BELEZIA
-                </span>
-                <span className="text-[9px] font-sans font-medium tracking-[0.25em] text-gold-400 uppercase">
-                  Salon & Academy • Delhi
-                </span>
-              </div>
+            {/* Brand Wordmark Logo */}
+            <div className="flex flex-col">
+              <span className="font-cinzel text-xl sm:text-2xl font-black tracking-[0.22em] text-gold-gradient leading-tight">
+                BELEZIA
+              </span>
+              <span className="text-[9px] sm:text-[10px] font-sans font-semibold tracking-[0.28em] text-neutral-200 uppercase -mt-0.5">
+                SALON & ACADEMY • DELHI
+              </span>
             </div>
 
             <p className="text-neutral-400 text-xs leading-relaxed pt-1">
