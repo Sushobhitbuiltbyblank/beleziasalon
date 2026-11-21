@@ -2,7 +2,7 @@ import React from 'react';
 import { MapPin, Phone, Clock, Instagram, Heart, Sparkles, GraduationCap, ShieldCheck } from 'lucide-react';
 import { BRAND_INFO } from '../data/salonData';
 
-export default function Footer() {
+export default function Footer({ onOpenLegal }) {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -41,7 +41,7 @@ export default function Footer() {
             </div>
 
             <p className="text-neutral-400 text-xs leading-relaxed pt-1">
-              East Delhi's premier unisex luxury salon, clinical skincare center, bridal studio,
+              <strong className="text-neutral-200">Belezia Salon</strong> (operating as Belezia Salon & Academy) is East Delhi's premier unisex luxury salon, clinical skincare center, bridal studio,
               and professional beauty & hairdressing academy. Built on 100% genuine products,
               certified master talent, and live practical education.
             </p>
@@ -90,6 +90,14 @@ export default function Footer() {
               <li><a href="#gallery" className="hover:text-gold-400 transition-colors">Before / After Gallery</a></li>
               <li><a href="#reviews" className="hover:text-gold-400 transition-colors">Client & Student Reviews</a></li>
               <li><a href="#contact" className="hover:text-gold-400 transition-colors">Contact & Map</a></li>
+              <li>
+                <button
+                  onClick={onOpenLegal}
+                  className="text-gold-400 hover:text-gold-300 font-semibold cursor-pointer text-left"
+                >
+                  Legal Entity & Business Details
+                </button>
+              </li>
             </ul>
           </div>
 
@@ -132,16 +140,49 @@ export default function Footer() {
 
       {/* Bottom Legal / Copyright Bar */}
       <div className="bg-dark-950 border-t border-neutral-900 py-6">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-neutral-500 text-[11px]">
-          <div>
-            © {currentYear} Belezia Salon & Academy. All Rights Reserved. Shop G-56, Vikas Marg, Laxmi Nagar, Delhi - 110092.
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+          {/* Explicit Legal Business Verification Box */}
+          <div className="p-4 rounded-xl bg-dark-900/80 border border-neutral-800 text-xs text-neutral-300">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-neutral-800 pb-2 mb-2">
+              <div>
+                <span className="text-neutral-400 font-medium">Legal Business Name:</span>{' '}
+                <strong className="text-white font-bold text-sm">Belezia Salon</strong>
+              </div>
+              <div>
+                <span className="text-neutral-400 font-medium">Trade / Operating Name:</span>{' '}
+                <span className="text-gold-400 font-semibold">Belezia Salon & Academy</span>
+              </div>
+              <div>
+                <span className="text-neutral-400 font-medium">Official Email:</span>{' '}
+                <a href={`mailto:${BRAND_INFO.email}`} className="text-neutral-200 hover:text-white underline">
+                  {BRAND_INFO.email}
+                </a>
+              </div>
+            </div>
+            <div className="text-[11px] text-neutral-400">
+              <span className="text-neutral-300 font-medium">Registered Commercial Address:</span>{' '}
+              Shop No. G-56, Near Laxmi Nagar Metro Station (Gate No. 1), Vikas Marg, Laxmi Nagar, Delhi - 110092, India
+            </div>
           </div>
-          <div className="flex items-center gap-4">
-            <span>Authorized L'Oréal Professionnel & Lotus Salon</span>
-            <span>•</span>
-            <a href={`tel:${BRAND_INFO.phoneRaw}`} className="text-neutral-400 hover:text-white">
-              072908 28680
-            </a>
+
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-neutral-500 text-[11px]">
+            <div>
+              © {currentYear} <strong className="text-neutral-300">Belezia Salon</strong>. All Rights Reserved. (Trading as Belezia Salon & Academy).
+            </div>
+            <div className="flex items-center gap-4">
+              <button
+                onClick={onOpenLegal}
+                className="text-neutral-400 hover:text-gold-400 underline cursor-pointer"
+              >
+                Legal Information & Privacy
+              </button>
+              <span>•</span>
+              <span>Domain: beleziasalon.in</span>
+              <span>•</span>
+              <a href={`tel:${BRAND_INFO.phoneRaw}`} className="text-neutral-400 hover:text-white">
+                {BRAND_INFO.phoneDisplay}
+              </a>
+            </div>
           </div>
         </div>
       </div>

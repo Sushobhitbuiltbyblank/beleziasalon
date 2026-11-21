@@ -32,7 +32,10 @@ export default function ContactMap() {
                   <MapPin className="w-6 h-6 text-gold-400" />
                 </div>
                 <div>
-                  <h3 className="text-white font-serif font-bold text-lg mb-1">Salon & Academy Address</h3>
+                  <h3 className="text-white font-serif font-bold text-lg mb-0.5">Salon & Academy Address</h3>
+                  <div className="text-xs text-gold-400 font-semibold mb-1.5">
+                    Legal Business Name: <span className="text-white">Belezia Salon</span>
+                  </div>
                   <p className="text-sm text-neutral-300 leading-relaxed">
                     {BRAND_INFO.address}
                   </p>

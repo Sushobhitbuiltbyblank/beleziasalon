@@ -50,7 +50,7 @@ export default function TrustHighlights({ onOpenBooking, onOpenDemo }) {
           </h2>
           <div className="w-24 h-[2px] bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto mb-6"></div>
           <p className="text-neutral-300 text-base sm:text-lg leading-relaxed">
-            Founded in the vibrant heart of Laxmi Nagar, Belezia Salon & Academy was built on a single
+            Founded in the vibrant heart of Laxmi Nagar, <strong className="text-white font-semibold">Belezia Salon</strong> (operating as Belezia Salon & Academy) was built on a single
             uncompromising promise: <strong className="text-gold-300 font-semibold">100% genuine luxury products</strong> and
             master-level artistry, delivered with hospital-grade hygiene and warm hospitality.
           </p>
