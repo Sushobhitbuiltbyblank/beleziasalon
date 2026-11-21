@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, MapPin, Clock, Instagram, Sparkles } from 'lucide-react';
+import { Phone, MapPin, Clock, Instagram, Sparkles, Mail } from 'lucide-react';
 import { BRAND_INFO } from '../data/salonData';
 
 export default function TopBar() {
@@ -32,6 +32,14 @@ export default function TopBar() {
           >
             <Phone className="w-3.5 h-3.5 text-gold-500" />
             <span>Call: {BRAND_INFO.phoneDisplay}</span>
+          </a>
+          <span className="hidden sm:inline text-neutral-600">•</span>
+          <a
+            href={`mailto:${BRAND_INFO.email}`}
+            className="hidden sm:flex items-center gap-1.5 text-neutral-300 hover:text-gold-400 transition-colors"
+          >
+            <Mail className="w-3.5 h-3.5 text-gold-500" />
+            <span>{BRAND_INFO.email}</span>
           </a>
           <span className="text-neutral-600">•</span>
           <a

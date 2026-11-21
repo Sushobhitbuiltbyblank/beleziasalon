@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Clock, Instagram, Heart, Sparkles, GraduationCap, ShieldCheck } from 'lucide-react';
+import { MapPin, Phone, Clock, Mail, Instagram, Heart, Sparkles, GraduationCap, ShieldCheck } from 'lucide-react';
 import { BRAND_INFO } from '../data/salonData';
 
 export default function Footer() {
@@ -60,6 +60,12 @@ export default function Footer() {
               <div className="flex items-center gap-2.5">
                 <Clock className="w-4 h-4 text-gold-400 shrink-0" />
                 <span>Monday – Sunday: 10:00 AM – 9:00 PM</span>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <Mail className="w-4 h-4 text-gold-400 shrink-0" />
+                <a href={`mailto:${BRAND_INFO.email}`} className="hover:text-gold-300">
+                  {BRAND_INFO.email}
+                </a>
               </div>
             </div>
 

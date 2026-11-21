@@ -11,6 +11,7 @@ Official website and digital presence for **Belezia Salon & Academy**, located i
 - **Location:** Shop No. G-56, Near Laxmi Nagar Metro Station (Gate No. 1), Vikas Marg, Laxmi Nagar, Delhi - 110092
 - **Timings:** Monday – Sunday, 10:00 AM – 9:00 PM
 - **Phone / WhatsApp:** 072908 28680 / +91 72908 28680
+- **Email:** experts@beleziasalon.in
 - **Instagram:** [@beleziasalonlaxminagar](https://www.instagram.com/beleziasalonlaxminagar/)
 - **Google Reviews:** 4.9★ Rated (650+ verified client reviews)
 

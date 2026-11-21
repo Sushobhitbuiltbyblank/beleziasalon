@@ -68,6 +68,12 @@ export default function ContactMap() {
                     >
                       Alternative: {BRAND_INFO.phoneInternational}
                     </a>
+                    <a
+                      href={`mailto:${BRAND_INFO.email}`}
+                      className="block text-xs text-gold-400/90 hover:text-white pt-1"
+                    >
+                      Email: {BRAND_INFO.email}
+                    </a>
                   </div>
                 </div>
               </div>

@@ -4,7 +4,7 @@ export const BRAND_INFO = {
   tradeName: "Belezia Salon & Academy",
   shortName: "Belezia",
   domain: "beleziasalon.in",
-  email: "info@beleziasalon.in",
+  email: "experts@beleziasalon.in",
   tagline: "11+ Years of Industry Excellence | 100% Original Products & Guaranteed Quality Services",
   experienceYears: 11,
   address: "Shop No. G-56, Near Laxmi Nagar Metro Station, Vikas Marg, Laxmi Nagar, Delhi - 110092",
