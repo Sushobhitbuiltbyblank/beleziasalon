@@ -33,10 +33,8 @@ export default function ContactMap() {
                 </div>
                 <div>
                   <h3 className="text-white font-serif font-bold text-lg mb-0.5">Salon & Academy Address</h3>
-                  <div className="text-xs text-gold-400 font-semibold mb-1.5 flex flex-wrap items-center gap-1.5">
-                    <span>Legal Business Name: <strong className="text-white">Belezia Salon</strong></span>
-                    <span className="text-neutral-500">•</span>
-                    <span className="text-neutral-400 font-mono text-[11px]">Udyam: UDYAM-DL-04-0027496</span>
+                  <div className="text-xs text-gold-400 font-semibold mb-1.5">
+                    Legal Business Name: <strong className="text-white">Belezia Salon</strong>
                   </div>
                   <p className="text-sm text-neutral-300 leading-relaxed">
                     {BRAND_INFO.address}
@@ -64,12 +62,12 @@ export default function ContactMap() {
                     >
                       {BRAND_INFO.phoneDisplay}
                     </a>
-                    <div className="text-xs text-neutral-400">
-                      Udyam Registered Mobile: <a href="tel:+918285171871" className="text-neutral-200 hover:underline font-medium">+91 82851 71871</a>
-                    </div>
-                    <div className="text-xs text-neutral-400">
-                      Official Email: <a href="mailto:jain.prabhat311@gmail.com" className="text-neutral-200 hover:underline">jain.prabhat311@gmail.com</a>
-                    </div>
+                    <a
+                      href={`tel:${BRAND_INFO.phoneRaw}`}
+                      className="block text-xs text-neutral-400 hover:text-white"
+                    >
+                      Alternative: {BRAND_INFO.phoneInternational}
+                    </a>
                   </div>
                 </div>
               </div>

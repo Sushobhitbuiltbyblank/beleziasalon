@@ -15,12 +15,10 @@ import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
 import BookingModal from './components/BookingModal';
 import DemoClassModal from './components/DemoClassModal';
-import LegalModal from './components/LegalModal';
 
 export default function App() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
-  const [isLegalModalOpen, setIsLegalModalOpen] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
 
   const handleOpenBookingModal = (service = null) => {
@@ -100,7 +98,7 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <Footer onOpenLegal={() => setIsLegalModalOpen(true)} />
+      <Footer />
 
       {/* Floating Bottom-Right WhatsApp Quick Chat */}
       <WhatsAppFloat />
@@ -116,12 +114,6 @@ export default function App() {
       <DemoClassModal
         isOpen={isDemoModalOpen}
         onClose={() => setIsDemoModalOpen(false)}
-      />
-
-      {/* Official Legal Entity & Privacy Modal */}
-      <LegalModal
-        isOpen={isLegalModalOpen}
-        onClose={() => setIsLegalModalOpen(false)}
       />
     </div>
   );
