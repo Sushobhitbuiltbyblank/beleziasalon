@@ -143,25 +143,42 @@ export default function Footer({ onOpenLegal }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
           {/* Explicit Legal Business Verification Box */}
           <div className="p-4 rounded-xl bg-dark-900/80 border border-neutral-800 text-xs text-neutral-300">
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-neutral-800 pb-2 mb-2">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-2 border-b border-neutral-800 pb-2 mb-2">
               <div>
                 <span className="text-neutral-400 font-medium">Legal Business Name:</span>{' '}
-                <strong className="text-white font-bold text-sm">Belezia Salon</strong>
+                <strong className="text-white font-bold text-sm">BELEZIA SALON</strong>
+              </div>
+              <div>
+                <span className="text-neutral-400 font-medium">MSME Udyam Reg. No.:</span>{' '}
+                <span className="text-gold-400 font-mono font-bold">UDYAM-DL-04-0027496</span>
               </div>
               <div>
                 <span className="text-neutral-400 font-medium">Trade / Operating Name:</span>{' '}
                 <span className="text-gold-400 font-semibold">Belezia Salon & Academy</span>
               </div>
-              <div>
-                <span className="text-neutral-400 font-medium">Official Email:</span>{' '}
-                <a href={`mailto:${BRAND_INFO.email}`} className="text-neutral-200 hover:text-white underline">
-                  {BRAND_INFO.email}
-                </a>
-              </div>
             </div>
-            <div className="text-[11px] text-neutral-400">
-              <span className="text-neutral-300 font-medium">Registered Commercial Address:</span>{' '}
-              Shop No. G-56, Near Laxmi Nagar Metro Station (Gate No. 1), Vikas Marg, Laxmi Nagar, Delhi - 110092, India
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-[11px] text-neutral-400">
+              <div>
+                <span className="text-neutral-300 font-medium">Registered Address (As per Udyam):</span>{' '}
+                G-56, Ground Floor, Belezia Salon, G Block, Vikas Marg, Laxmi Nagar, Delhi - 110092
+              </div>
+              <div>
+                <span className="text-neutral-300 font-medium">Parent Enterprise Unit:</span>{' '}
+                M/S BLADE SALON AND WELLNESS PRIVATE LIMITED
+              </div>
+              <div>
+                <span className="text-neutral-300 font-medium">Official Registered Email:</span>{' '}
+                <a href="mailto:jain.prabhat311@gmail.com" className="text-neutral-200 hover:text-white underline">
+                  jain.prabhat311@gmail.com
+                </a>{' '}(and info@beleziasalon.in)
+              </div>
+              <div>
+                <span className="text-neutral-300 font-medium">Registered Mobile:</span>{' '}
+                <a href="tel:+918285171871" className="text-neutral-200 hover:text-white">
+                  +91 82851 71871
+                </a>{' '}| Salon Desk: 072908 28680
+              </div>
             </div>
           </div>
 

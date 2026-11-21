@@ -36,18 +36,33 @@ export default function LegalModal({ isOpen, onClose }) {
           <div className="p-4 rounded-xl bg-dark-850 border border-neutral-800">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
               <div>
-                <span className="text-neutral-400 block text-[11px] uppercase tracking-wider">Legal Business Name</span>
-                <span className="text-white font-bold text-base">Belezia Salon</span>
+                <span className="text-neutral-400 block text-[11px] uppercase tracking-wider">Legal Enterprise Name</span>
+                <span className="text-white font-bold text-base">BELEZIA SALON</span>
               </div>
 
               <div>
-                <span className="text-neutral-400 block text-[11px] uppercase tracking-wider">Trading / Brand Name</span>
+                <span className="text-neutral-400 block text-[11px] uppercase tracking-wider">Udyam Registration Number</span>
+                <span className="text-gold-400 font-mono font-bold text-sm">UDYAM-DL-04-0027496</span>
+              </div>
+
+              <div>
+                <span className="text-neutral-400 block text-[11px] uppercase tracking-wider">Enterprise Type & Ministry</span>
+                <span className="text-neutral-200">Micro (Services) • M/o MSME, Govt. of India</span>
+              </div>
+
+              <div>
+                <span className="text-neutral-400 block text-[11px] uppercase tracking-wider">Trading / Operating Name</span>
                 <span className="text-gold-400 font-semibold text-sm">Belezia Salon & Academy</span>
               </div>
 
-              <div>
-                <span className="text-neutral-400 block text-[11px] uppercase tracking-wider">Business Type / Industry</span>
-                <span className="text-neutral-200">Beauty & Wellness Salon, Hairdressing & Cosmetology Academy</span>
+              <div className="sm:col-span-2">
+                <span className="text-neutral-400 block text-[11px] uppercase tracking-wider">Name of Unit(s)</span>
+                <span className="text-neutral-200">1. M/S BLADE SALON AND WELLNESS PRIVATE LIMITED &nbsp;|&nbsp; 2. BELEZIA SALON</span>
+              </div>
+
+              <div className="sm:col-span-2">
+                <span className="text-neutral-400 block text-[11px] uppercase tracking-wider">National Industry Classification (NIC)</span>
+                <span className="text-neutral-200 font-mono text-[11px]">NIC 96020 - Hairdressing, hair styling, skin care, makeup, facial massage, manicure & pedicure</span>
               </div>
 
               <div>
@@ -55,19 +70,24 @@ export default function LegalModal({ isOpen, onClose }) {
                 <span className="text-neutral-200 font-mono">beleziasalon.in</span>
               </div>
 
+              <div>
+                <span className="text-neutral-400 block text-[11px] uppercase tracking-wider">Date of Registration</span>
+                <span className="text-neutral-200">03/03/2022</span>
+              </div>
+
               <div className="sm:col-span-2">
-                <span className="text-neutral-400 block text-[11px] uppercase tracking-wider">Registered Commercial Address</span>
-                <span className="text-neutral-200">Shop No. G-56, Near Laxmi Nagar Metro Station (Gate No. 1), Vikas Marg, Laxmi Nagar, Delhi - 110092, India</span>
+                <span className="text-neutral-400 block text-[11px] uppercase tracking-wider">Official Registered Address (As per Udyam)</span>
+                <span className="text-neutral-200">G-56, Ground Floor, Belezia Salon, G Block, Vikas Marg, Laxmi Nagar, Delhi - 110092, India</span>
               </div>
 
               <div>
-                <span className="text-neutral-400 block text-[11px] uppercase tracking-wider">Official Phone Number</span>
-                <span className="text-neutral-200 font-medium">+91 72908 28680 / 072908 28680</span>
+                <span className="text-neutral-400 block text-[11px] uppercase tracking-wider">Registered Official Mobile</span>
+                <span className="text-neutral-200 font-medium">+91 82851 71871 (Salon Desk: 072908 28680)</span>
               </div>
 
               <div>
-                <span className="text-neutral-400 block text-[11px] uppercase tracking-wider">Official Email Address</span>
-                <span className="text-neutral-200 font-medium">info@beleziasalon.in</span>
+                <span className="text-neutral-400 block text-[11px] uppercase tracking-wider">Registered Official Email</span>
+                <span className="text-neutral-200 font-medium">jain.prabhat311@gmail.com / info@beleziasalon.in</span>
               </div>
             </div>
           </div>
